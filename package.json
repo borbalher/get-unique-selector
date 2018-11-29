@@ -1,6 +1,6 @@
 {
   "name": "get-unique-selector",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get a unique CSS selector for a given DOM node",
   "main": "index.js",
   "scripts": {
@@ -15,10 +15,11 @@
     "build": "babel src/index.js -d dist"
   },
   "keywords": [
-    "regexp",
-    "loop",
-    "regular",
-    "expression"
+    "css",
+    "selector",
+    "reverse",
+    "sibling",
+    "unique"
   ],
   "author": "borbalher",
   "license": "MIT",
