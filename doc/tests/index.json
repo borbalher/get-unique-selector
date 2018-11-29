@@ -1,0 +1,218 @@
+{
+  "stats": {
+    "suites": 3,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2018-11-29T15:15:59.044Z",
+    "end": "2018-11-29T15:16:00.278Z",
+    "duration": 1234,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "5048ce56-a9c9-4213-988c-67a19ddcc9fb",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "4f67706e-6960-415f-a531-97b8bd9d0381",
+        "title": "getUniqueCssSelector tests",
+        "fullFile": "/mnt/c/Users/borbalher/Documents/GitHub/get-unique-selector/src/tests.js",
+        "file": "/src/tests.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [],
+        "suites": [
+          {
+            "uuid": "6919fb88-8f99-4ba8-8342-30ce40d0cbb4",
+            "title": "getPath tests",
+            "fullFile": "/mnt/c/Users/borbalher/Documents/GitHub/get-unique-selector/src/tests.js",
+            "file": "/src/tests.js",
+            "beforeHooks": [
+              {
+                "title": "\"before all\" hook",
+                "fullTitle": "getUniqueCssSelector tests getPath tests \"before all\" hook",
+                "timedOut": false,
+                "duration": 1173,
+                "pass": false,
+                "fail": false,
+                "pending": false,
+                "code": "const HTML = fs.readFileSync(path.join(__dirname, 'get-selector-test.html'), 'utf-8')\nthis.jsdom = require('jsdom-global')(HTML)",
+                "err": {},
+                "isRoot": false,
+                "uuid": "07cd0b4d-c581-41bf-8cfb-f9c3156ee3d0",
+                "isHook": true,
+                "skipped": false
+              }
+            ],
+            "afterHooks": [
+              {
+                "title": "\"after all\" hook",
+                "fullTitle": "getUniqueCssSelector tests getPath tests \"after all\" hook",
+                "timedOut": false,
+                "duration": 1,
+                "pass": false,
+                "fail": false,
+                "pending": false,
+                "code": "this.jsdom()",
+                "err": {},
+                "isRoot": false,
+                "uuid": "a7d31f64-a8bb-4e98-b75f-a3b62f6b50b6",
+                "isHook": true,
+                "skipped": false
+              }
+            ],
+            "tests": [
+              {
+                "title": "should get the second topic paragraph",
+                "fullTitle": "getUniqueCssSelector tests getPath tests should get the second topic paragraph",
+                "timedOut": false,
+                "duration": 23,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "const\ngetUniqueSelector = require('.'),\nelement           = document.querySelectorAll('.topic-title')[1],\nselector          = getUniqueSelector(element),\ndomElement        = document.querySelector(selector)\nassert(domElement.isSameNode(element) === true)",
+                "err": {},
+                "isRoot": false,
+                "uuid": "af0f2e8c-745b-42f9-91a2-d123659e345c",
+                "isHook": false,
+                "skipped": false
+              },
+              {
+                "title": "should return false when element is not HTMLElement",
+                "fullTitle": "getUniqueCssSelector tests getPath tests should return false when element is not HTMLElement",
+                "timedOut": false,
+                "duration": 1,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "const\ngetUniqueSelector = require('.'),\nselector          = getUniqueSelector({})\nassert(selector === false)",
+                "err": {},
+                "isRoot": false,
+                "uuid": "c02514fa-dbee-458b-9ec5-9ae7c96693c7",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "af0f2e8c-745b-42f9-91a2-d123659e345c",
+              "c02514fa-dbee-458b-9ec5-9ae7c96693c7"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 24,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          },
+          {
+            "uuid": "fc8b6ccf-4345-4d62-a12a-b84e07fd1e9c",
+            "title": "previousSiblingPolyfill tests",
+            "fullFile": "/mnt/c/Users/borbalher/Documents/GitHub/get-unique-selector/src/tests.js",
+            "file": "/src/tests.js",
+            "beforeHooks": [
+              {
+                "title": "\"before all\" hook",
+                "fullTitle": "getUniqueCssSelector tests previousSiblingPolyfill tests \"before all\" hook",
+                "timedOut": false,
+                "duration": 5,
+                "pass": false,
+                "fail": false,
+                "pending": false,
+                "code": "const HTML = fs.readFileSync(path.join(__dirname, 'polyfill-test.html'), 'utf-8')\nthis.jsdom = require('jsdom-global')(HTML)",
+                "err": {},
+                "isRoot": false,
+                "uuid": "71d0d2b4-12bb-47f0-8f16-043d3f2bbdc8",
+                "isHook": true,
+                "skipped": false
+              }
+            ],
+            "afterHooks": [
+              {
+                "title": "\"after all\" hook",
+                "fullTitle": "getUniqueCssSelector tests previousSiblingPolyfill tests \"after all\" hook",
+                "timedOut": false,
+                "duration": 0,
+                "pass": false,
+                "fail": false,
+                "pending": false,
+                "code": "this.jsdom()",
+                "err": {},
+                "isRoot": false,
+                "uuid": "44024d87-5cd7-4212-90e9-a368789d6758",
+                "isHook": true,
+                "skipped": false
+              }
+            ],
+            "tests": [
+              {
+                "title": "should get #previous-sibling from #starting-point (separated by text nodes)",
+                "fullTitle": "getUniqueCssSelector tests previousSiblingPolyfill tests should get #previous-sibling from #starting-point (separated by text nodes)",
+                "timedOut": false,
+                "duration": 1,
+                "state": "passed",
+                "speed": "fast",
+                "pass": true,
+                "fail": false,
+                "pending": false,
+                "code": "const\ngetPrevious     = require('./previous-sibling-polyfill'),\nelement         = window.document.querySelector('#starting-point'),\npreviousElement = getPrevious(element),\npreviousSibling = document.querySelector('#previous-sibling')\nassert(previousElement.isSameNode(previousSibling) === true)",
+                "err": {},
+                "isRoot": false,
+                "uuid": "b791ee91-bd4c-40b5-b642-566343991e21",
+                "isHook": false,
+                "skipped": false
+              }
+            ],
+            "suites": [],
+            "passes": [
+              "b791ee91-bd4c-40b5-b642-566343991e21"
+            ],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 1,
+            "root": false,
+            "rootEmpty": false,
+            "_timeout": 2000
+          }
+        ],
+        "passes": [],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2018
+}
