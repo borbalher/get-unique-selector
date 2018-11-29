@@ -1,7 +1,7 @@
 {
-  "name": "regex-loop",
+  "name": "get-unique-selector",
   "version": "1.0.0",
-  "description": "It executes the sepecified regexp for the given text and executes the callback with the match. If a global regexp is used, it creates a loop.",
+  "description": "Get a unique CSS selector for a given DOM node",
   "main": "index.js",
   "scripts": {
     "generate-doc": "npm test && npm run-script generate-doc-coverage && npm run-script generate-doc-tests && npm run-script generate-doc-jsdoc",
@@ -24,7 +24,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/borbalher/regexp-loop"
+    "url": "https://github.com/borbalher/get-unique-selector"
   },
   "devDependencies": {
     "@babel/cli": "^7.1.5",
